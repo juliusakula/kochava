@@ -1,0 +1,19 @@
+---
+- name: install redis
+  hosts: kochava
+  vars:
+    redis_port: 6378
+    redis_password: authentication
+  roles:
+    - DavidWittman.redis
+- name: install php, php-redis
+  hosts: kochava
+  vars_files:
+    - php_config.yml
+  roles:
+    - geerlingguy.php-redis
+- name: install golang
+  hosts: kochava
+  roles:
+    - role: gantsign.golang
+      golang_gopath: '$HOME/workspace-go'
