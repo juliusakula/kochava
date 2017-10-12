@@ -12,6 +12,11 @@
     - php_config.yml
   roles:
     - geerlingguy.php-redis
+- name: install apache
+  hosts: kochava
+  tasks:
+    - name: install apache2
+      apt: name=apache2 update_cache=yes state=latest
 - name: install golang
   hosts: kochava
   roles:

@@ -30,12 +30,9 @@ Extra Merit:
 Resources - Server:
 	Droplet Name: Candidate.Playground-Justin.Murdock
 	IP Address: 104.236.155.176
-	Username: root	
-	Password: 98d43e7f58dca11535f2360b02
 
 Resources - Contact:
     Eric Mann
-    emann@kochava.com
 
 Data flow:
     1) Web request (see sample request) >
