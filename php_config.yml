@@ -8,3 +8,4 @@ php_packages:
   - php-common
   - php-redis
   - php-mcrypt
+  - libapache2-mod-php7.0
