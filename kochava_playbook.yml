@@ -22,3 +22,13 @@
   roles:
     - role: gantsign.golang
       golang_gopath: '$HOME/workspace-go'
+- hosts: kochava
+  tasks:
+    - name: copy file to kochava
+      sudo: yes
+      copy:
+        src: ingest.php
+        dest: /var/www/html
+        owner: justin
+        group: sudo
+        mode: 0644
