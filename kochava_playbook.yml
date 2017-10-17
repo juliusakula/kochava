@@ -4,6 +4,7 @@
   vars:
     redis_port: 6378
     redis_password: authentication
+    redis_stop_writes_on_bgsave_error: "no"
   roles:
     - DavidWittman.redis
 - name: install php, php-redis
